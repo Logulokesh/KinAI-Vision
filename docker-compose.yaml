@@ -1,0 +1,115 @@
+services:
+  fastapi:
+    build:
+      context: .
+      cache_from: []
+    ports:
+      - "8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    volumes:
+      - .:/app
+      - ./.env:/app/.env
+    env_file:
+      - .env
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    network_mode: host
+    user: appuser
+    command: >
+      bash -c "sleep 30 && uvicorn src.main:app --host 0.0.0.0 --port 8000"
+
+  celery:
+    build:
+      context: .
+      cache_from: []
+    depends_on:
+      redis:
+        condition: service_healthy
+    volumes:
+      - .:/app
+      - ./.env:/app/.env
+    env_file:
+      - .env
+    command: >
+      bash -c "sleep 30 && celery -A src.tasks worker --loglevel=info"
+    network_mode: host
+    user: appuser
+
+  celery_beat:
+    build:
+      context: .
+      cache_from: []
+    depends_on:
+      redis:
+        condition: service_healthy
+    volumes:
+      - .:/app
+      - ./.env:/app/.env
+    env_file:
+      - .env
+    command: >
+      bash -c "sleep 30 && celery -A src.tasks beat --loglevel=info"
+    network_mode: host
+    user: appuser
+
+  kinwatch:
+    build:
+      context: .
+      cache_from: []
+    depends_on:
+      fastapi:
+        condition: service_healthy
+    volumes:
+      - .:/app
+      - ./.env:/app/.env
+    env_file:
+      - .env
+    command: >
+      bash -c "sleep 30 && python3 /app/src/kinwatch_agent.py"
+    network_mode: host
+    user: appuser
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+  postgres:
+    image: postgres:15
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=kinai
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init_db.sql:/docker-entrypoint-initdb.d/init_db.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U user -d kinai"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    network_mode: host
+
+  redis:
+    image: redis:7
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    network_mode: host
+
+volumes:
+  postgres_data:
+  redis_data:
