@@ -114,7 +114,7 @@
 > **KinAI Vision** represents the next evolution in smart home technology, leveraging cutting-edge artificial intelligence to create a truly intelligent living environment that **respects your privacy**. Unlike traditional motion sensors or basic automation systems, KinAI Vision **thinks, recognizes, and personalizes** every interaction with your home—all while keeping your data completely private and secure.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Logulokesh/KinAI-Vision/refs/heads/main/KinAi.gif" alt="KinAi-Vision" width="50%" />
+  <img src="https://raw.githubusercontent.com/Logulokesh/KinAI-Vision/refs/heads/main/KinAi.gif" alt="KinAi-Vision" width="80%" />
 </p>
 
 <br>
