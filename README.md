@@ -108,9 +108,14 @@
 </table>
 
 
+
 ## 🤖 AI-First Smart Home Revolution
 
 > **KinAI Vision** represents the next evolution in smart home technology, leveraging cutting-edge artificial intelligence to create a truly intelligent living environment that **respects your privacy**. Unlike traditional motion sensors or basic automation systems, KinAI Vision **thinks, recognizes, and personalizes** every interaction with your home—all while keeping your data completely private and secure.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Logulokesh/KinAi-NexPatrol-AI-powered-home-surveillance/refs/heads/main/Logo.gif" alt="KinAi-Nexpatrol" width="50%" />
+</p>
 
 <br>
 
@@ -133,8 +138,6 @@
 <td colspan="2" align="center"><strong>🗄️ Private Database</strong><br>Your family's biometric data stored locally in your own PostgreSQL instance</td>
 </tr>
 </table>
-
-**Your data stays YOUR data.**
 
 <br>
 
