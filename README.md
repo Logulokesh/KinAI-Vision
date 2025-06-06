@@ -14,6 +14,10 @@
 ![YOLOv8](https://img.shields.io/badge/YOLOv8-ff9800?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![CUDA](https://img.shields.io/badge/CUDA-76B900?style=for-the-badge&logo=nvidia&logoColor=white)
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Logulokesh/KinAI-Vision/refs/heads/main/src/Logo-2.gif" alt="KinAi-Nexpatrol" width="100%" />
+</p>
+
 **🧠 LangChain • 🎯 InsightFace • 🔄 CrewAI • 🐳 Docker**
 
 ---
