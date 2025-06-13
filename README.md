@@ -181,7 +181,9 @@
 | | Mom alone | Soft white, 50% | 22°C, Fan medium | Devotional/Classical | Meditation corner lighting |
 | | Kids alone | Bright white, 80% | 23°C, Fan high | Cartoon/Kids music | Parental control mode |
 
-### 💬 **Contextual AI Greetings**
+
+# 🤖 KinAI Vision - AI Greeting Examples
+## 💬 **Contextual AI Greetings**
 
 <table>
 <tr>
@@ -201,20 +203,33 @@
 </tr>
 </table>
 
-<div align="center">
+## 🧠💬 **Intelligent Greeting Scenarios with Living Room Automation**
 
-**Example AI-Generated Greetings:**
+| **👤 Person** | **🕐 Time** | **🌤️ Weather** | **🕉️ Cultural** | **💬 AI-Generated Greeting** | **🏠 Automation** |
+|:---|:---|:---|:---|:---|:---|
+| **👨 Father** | 🌆 Evening | 🌧️ Rainy 15°C | None | <img src="https://raw.githubusercontent.com/Logulokesh/KinAI-Ecosystem/refs/heads/main/img/BarLoader.gif" alt="Loading..." width="80" /> *"Welcome home, Dad! It's a rainy evening in Melbourne—I've started your Ilaiyaraaja (இளையராஜா) playlist to match the mood."* | 🌡️ 21°C, Fan low<br>💡 Warm 40%<br>🎵 Ilaiyaraaja classics<br>📺 Muted |
+| **👩 Mom** | 🌅 Monday Morning | 🌫️ Foggy 12°C | 🙏 Lord Shiva day | <img src="https://raw.githubusercontent.com/Logulokesh/KinAI-Ecosystem/refs/heads/main/img/BarLoader.gif" alt="Loading..." width="80" /> *"Good morning, Mom! Peaceful Monday foggy morning at 12°C—I've started the Om Namah Shivaya playlist for Lord Shiva prayers."* | 🌡️ 20°C, Auto<br>💡 Soft 30%<br>🎵 Shiva bhajans<br>📺 Off |
+| **👶 Son** | 🌇 Tuesday Evening | ☀️ Hot 35°C | 🏏 Murugan prayer | <img src="https://raw.githubusercontent.com/Logulokesh/KinAI-Ecosystem/refs/heads/main/img/BarLoader.gif" alt="Loading..." width="80" /> *"Vel Vel Muruga! Hot Tuesday at 35°C—I've cooled the room and started Murugan padalgal for your evening prayers."* | 🌡️ 18°C, Fan high<br>💡 Cool 90%<br>🎵 Murugan padalgal<br>📺 Off |
+| **👧 Daughter** | 🌃 Late Night | 🌙 Clear 18°C | Study session | <img src="https://raw.githubusercontent.com/Logulokesh/KinAI-Ecosystem/refs/heads/main/img/BarLoader.gif" alt="Loading..." width="80" /> *"Welcome back! Clear night at 18°C—I've set up the perfect study environment for your late session."* | 🌡️ 20°C, Silent<br>💡 Focus 100%<br>🎵 Lo-fi study<br>📺 Off |
+| **👨 Father** | 🌄 Wednesday Dawn | 🌬️ Windy 10°C | 🙏 Venkateswara prayer | <img src="https://raw.githubusercontent.com/Logulokesh/KinAI-Ecosystem/refs/heads/main/img/BarLoader.gif" alt="Loading..." width="80" /> *"Early Wednesday prayers, Dad! Windy dawn at 10°C—I've warmed up and started Vishnu Sahasranamam for Lord Venkateswara."* | 🌡️ 22°C, Low<br>💡 Gentle 50%<br>🎵 Vishnu Sahasranamam<br>📺 Off |
+| **👩 Mom** | 🌞 Thursday Midday | 🌦️ Drizzle 24°C | 🙏 Guru prayers | <img src="https://raw.githubusercontent.com/Logulokesh/KinAI-Ecosystem/refs/heads/main/img/BarLoader.gif" alt="Loading..." width="80" /> *"Guru's day blessings, Mom! Light Thursday drizzle at 24°C—I've started the Guru stotram collection for your prayers."* | 🌡️ 23°C, Medium<br>💡 Natural 70%<br>🎵 Guru stotram<br>📺 Off |
+| **👶 Kids** | 🌈 Morning | 🌦️ Rainbow 20°C | Weekend play | <img src="https://raw.githubusercontent.com/Logulokesh/KinAI-Ecosystem/refs/heads/main/img/BarLoader.gif" alt="Loading..." width="80" /> *"Rainbow morning, kids! Perfect 20°C weather—I've prepared the living room for your weekend adventures!"* | 🌡️ 21°C, Auto<br>💡 Bright 85%<br>🎵 Upbeat Tamil kids<br>📺 Disney+ Hotstar |
+| **👨‍👩‍👧‍👦 Family** | 🌃 Night | ⛈️ Thunderstorm 16°C | Movie night | <img src="https://raw.githubusercontent.com/Logulokesh/KinAI-Ecosystem/refs/heads/main/img/BarLoader.gif" alt="Loading..." width="80" /> *"Stormy night, family! Perfect thunderstorm weather at 16°C for a cozy movie night together."* | 🌡️ 22°C, Quiet<br>💡 Dim 25%<br>🎵 Soft instrumental<br>📺 Netflix ready |
+| **👨 Father** | 🌅 Saturday Sunrise | 🌨️ Light snow 2°C | 🙏 Shani prayers | <img src="https://raw.githubusercontent.com/Logulokesh/KinAI-Ecosystem/refs/heads/main/img/BarLoader.gif" alt="Loading..." width="80" /> *"Rare Saturday snow, Dad! Light flurries at 2°C—I've made it extra cozy with devotional songs for Lord Shani prayers."* | 🌡️ 25°C, High<br>💡 Warm gold 60%<br>🎵 Devotional database<br>📺 Off |
+| **👩 Mom** | 🌆 Friday Sunset | 🌪️ Windy 28°C | 🪔 Lakshmi prayers | <img src="https://raw.githubusercontent.com/Logulokesh/KinAI-Ecosystem/refs/heads/main/img/BarLoader.gif" alt="Loading..." width="80" /> *"Blessed Friday evening, Mom! Windy sunset at 28°C—I've prepared the space and started Lakshmi aarti for prosperity prayers."* | 🌡️ 24°C, Strong fan<br>💡 Festive gold<br>🎵 Lakshmi aarti<br>📺 Off |
+| **👨‍👩‍👧‍👦 Family** | 🌅 Sunday Morning | 🌈 Post-rain 25°C | ☀️ Surya prayers | <img src="https://raw.githubusercontent.com/Logulokesh/KinAI-Ecosystem/refs/heads/main/img/BarLoader.gif" alt="Loading..." width="80" /> *"Beautiful Sunday sunrise, family! Perfect 25°C post-rain weather—I've timed the Aditya Hridayam for Lord Surya prayers."* | 🌡️ 23°C, Gentle<br>💡 Golden sunrise<br>🎵 Aditya Hridayam<br>📺 Off |
+| **👧 Daughter** | 🌃 Evening | 🌫️ Misty 14°C | Art project | <img src="https://raw.githubusercontent.com/Logulokesh/KinAI-Ecosystem/refs/heads/main/img/BarLoader.gif" alt="Loading..." width="80" /> *"Mystical evening! Misty 14°C weather—I've set perfect lighting for your art project, dear."* | 🌡️ 21°C, Low<br>💡 Artist white 95%<br>🎵 Creative instrumentals<br>📺 Art tutorials |
 
-</div>
+## Key AI Features Demonstrated
 
-> *"Welcome home, Logu! It's a chilly 8°C evening in Melbourne—I've warmed up the living room for you."*
-
-> *"Good morning, family! Beautiful sunny day ahead at 22°C. Perfect weather for the kids' outdoor activities!"*
-
-> *"Hello, Logu! Happy Diwali! I've prepared your favorite devotional playlist and adjusted the lighting for the celebration."*
-
-### 🏠 **Multi-Room Intelligence Network**
-
+- **🧠 Contextual Intelligence**: AI considers person identity, time, weather, and cultural context
+- **🎯 Personalized Automation**: Each family member gets customized room settings
+- **🌧️ Weather-Music Matching**: Rainy weather triggers Ilaiyaraaja playlists, sunny days get upbeat music
+- **🕉️ Daily Deity Recognition**: System follows traditional weekday deity worship with appropriate playlists
+- **👨‍👩‍👧‍👦 Activity Recognition**: Different responses for prayers, study, cooking, and celebration times
+- **🎵 Sacred Music Integration**: Traditional Tamil devotional music matched to specific deities and days
+- **📅 Ritual Timing**: Sunrise-timed Aditya Hridayam, evening aartis, and prayer-specific atmospheres
+- **🔐 Privacy-First**: All AI processing happens locally on your home network
 <table align="center">
 <tr>
 <td align="center">📹<br><strong>Strategic Sensor Placement</strong><br>Sensors in every room for complete coverage and personalized automation</td>
