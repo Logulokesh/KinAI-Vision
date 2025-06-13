@@ -123,184 +123,21 @@
 
 <br>
 
-# 🏠⚡ KinAI Vision - Personalized Room Automation System
-
-## 🧠 AI-Powered Person-Based Automation Logic
-
-### 📊 Room-Specific Automation Matrix
-
-| **🏠 Room Type** | **👤 Person Detected** | **💡 Lighting Preference** | **🌡️ Climate Control** | **🎵 Audio/Music** | **⚡ Additional Automation** |
-|:---|:---|:---|:---|:---|:---|
-| **📚 Study Room** | Dad | Cool white, 100% brightness | 20°C, AC on | Focus/Concentration music | Open curtains, activate air purifier |
-| | Kids | Bright white, 90% brightness | 22°C, Fan on | Study music/Lo-fi beats | Desk lamp on, computer wake up |
-| | Mom | Natural white, 70% | 21°C, Fan medium | Calm instrumental | Reading light, phone DND mode |
-| **🍽️ Kitchen** | Mom | Bright white, 100% | 23°C, Exhaust fan | Cooking playlist/Devotional | Under-cabinet lights, recipe display |
-| | Dad | Bright white, 80% | 22°C, Fan on | News/Podcast | Coffee machine auto-start |
-| | Kids | Bright white, 90% | 23°C, Fan on | Fun/Cartoon music | Snack reminder, safety mode |
-| **🛋️ Living Room** | Family (Multiple) | Natural white, 70% | 22°C, AC/Fan auto | Family playlist | TV on, volume moderate |
-| | Dad alone | Warm white, 60% | 21°C, Fan low | News/Sports | TV on sports channel |
-| | Mom alone | Soft white, 50% | 22°C, Fan medium | Devotional/Classical | Meditation corner lighting |
-| | Kids alone | Bright white, 80% | 23°C, Fan high | Cartoon/Kids music | Parental control mode |
-
 ---
 
-## ⏰ Time-Based Automation Rules
+## ⚖️ AI vs Traditional Sensors  
+🏆 **Why AI Beats Traditional Sensors**
 
-| **🕐 Time Period** | **🌅 Morning (6-10 AM)** | **☀️ Day (10 AM-6 PM)** | **🌆 Evening (6-10 PM)** | **🌙 Night (10 PM-6 AM)** |
-|:---|:---|:---|:---|:---|
-| **💡 Lighting Intensity** | Gradual increase (20→80%) | Full brightness as needed | Warm transition (80→40%) | Night mode (10-30%) |
-| **🎵 Music Volume** | Low-Medium (30-50%) | Normal (50-70%) | Medium (40-60%) | Very Low (10-20%) |
-| **🌡️ Temperature** | Cool (20-22°C) | Comfort (22-24°C) | Warm (23-25°C) | Night (21-23°C) |
-| **🚪 Auto-Off Timer** | 3 minutes | 5 minutes | 5 minutes | 2 minutes |
-
----
-
-## 🎯 Presence Detection & Automation Logic
-
-### 📍 Entry Detection
-| **Event** | **Action** | **Timing** |
-|:---|:---|:---|
-| **Person Enters Room** | Instant lighting based on person's profile | < 1 second |
-| **Multiple People Enter** | Blend preferences or family profile | < 2 seconds |
-| **Unknown Person** | Default lighting + Security alert | < 1 second |
-
-### 🚪 Exit Detection
-| **Event** | **Action** | **Timing** |
-|:---|:---|:---|
-| **Person Leaves Room** | Start countdown timer | Immediate |
-| **5 Minutes Empty** | Turn off lights, music, AC | Auto-off after 5 min |
-| **Movement Detected Again** | Cancel auto-off, restore settings | < 1 second |
-| **Extended Absence (30+ min)** | Full room shutdown, energy save mode | After 30 minutes |
+| Feature         | 🤖 **KinAI Vision (AI-Powered)**                            | 🔧 **Traditional Sensors (PIR/Microwave/Ultrasonic)** |
+|----------------|-------------------------------------------------------------|--------------------------------------------------------|
+| **Smartness**   | Learns, adapts, personalizes                               | Basic motion detection                                |
+| **Awareness**   | Recognizes people, context, weather, and culture           | No ID, no context, frequent false alarms              |
+| **Automation**  | Predictive, real-time responses with GPU acceleration      | Simple on/off triggers                                |
+| **Interaction** | Natural language, human-like communication                 | Beeps or lights only                                  |
 
 ---
-
-## 🏡 Multi-Room Intelligence
-
-### 🚶‍♂️ Movement Tracking
-| **Scenario** | **Current Room** | **Next Room** | **AI Prediction** |
-|:---|:---|:---|:---|
-| Dad studies → Kitchen | Study Room active | Pre-warm Kitchen lights | Coffee time detection |
-| Mom prays → Kitchen | Living Room devotional | Kitchen prep mode | Cooking time predicted |
-| Kids play → Study | Living Room play mode | Study Room preparation | Homework time auto-setup |
-| Family TV → Bedrooms | Living Room family | Bedrooms night mode | Bedtime routine activation |
-
-### 🔄 Room Coordination
-| **Family Activity** | **Primary Room** | **Supporting Rooms** | **Coordination** |
-|:---|:---|:---|:---|
-| **Movie Night** | Living Room (main) | Kitchen (snacks), Study (dimmed) | Coordinated ambiance |
-| **Dinner Time** | Kitchen/Dining | Living Room (TV off), Study (saved) | Family gathering mode |
-| **Study Time** | Study Room (focus) | Living Room (quiet), Kitchen (minimal) | Concentration environment |
-
----
-
-## 🎨 Personalization Features
-
-### 👨‍👩‍👧‍👦 Individual Profiles
-| **Person** | **Learning Patterns** | **Adaptive Features** |
-|:---|:---|:---|
-| **Dad** | Work schedule, study habits, coffee times | Productivity optimization |
-| **Mom** | Prayer times, cooking schedule, rest periods | Cultural & comfort focus |
-| **Kids** | School hours, play time, study schedule | Safety & learning support |
-| **Guests** | Temporary comfort settings | Welcome & hospitality mode |
-
-### 🧠 AI Learning Capabilities
-| **Learning Area** | **Data Points** | **Adaptation** |
-|:---|:---|:---|
-| **Daily Routines** | Entry/exit times, duration in rooms | Predictive pre-heating/lighting |
-| **Seasonal Preferences** | Temperature, lighting changes | Weather-based adjustments |
-| **Mood Detection** | Facial analysis, behavior patterns | Emotional environment adaptation |
-| **Energy Patterns** | Usage optimization, cost savings | Smart scheduling for efficiency |
-
----
-
-## ⚡ Technical Implementation
-
-### 🔧 Core Automation Flow
-```
-Person Detection (YOLOv8) → Face Recognition (InsightFace) → 
-Profile Lookup (PostgreSQL) → Preference Application (FastAPI) → 
-Device Control (Home Assistant) → Continuous Learning (AI Feedback)
-```
-
-### 📊 Real-Time Processing
-| **Component** | **Response Time** | **Accuracy** |
-|:---|:---|:---|
-| **Person Detection** | < 100ms | 99.5% |
-| **Face Recognition** | < 200ms | 99.8% |
-| **Profile Loading** | < 50ms | 100% |
-| **Device Control** | < 500ms | 99.9% |
-| **Learning Update** | Background | Continuous |
-
----
-
-## 🎯 Smart Scenarios
-
-### 🌅 Morning Routine
-1. **Dad enters Study Room at 7 AM**
-   - Lights: Cool white, 100% brightness
-   - AC: 20°C for focus
-   - Music: Concentration playlist
-   - Coffee machine: Auto-start in kitchen
-
-### 🍽️ Dinner Preparation  
-2. **Mom enters Kitchen at 6 PM**
-   - Lights: Bright white, full brightness
-   - Exhaust fan: Auto-start
-   - Music: Devotional evening playlist
-   - Recipe display: Active on tablet
-
-### 📚 Study Time
-3. **Kids enter Study Room at 8 PM**
-   - Lights: Bright white, 90% brightness
-   - Fan: Medium speed for comfort
-   - Music: Lo-fi study beats
-   - Desk setup: Optimal lighting configuration
-
-### 🌙 Bedtime Routine
-4. **Family moves to bedrooms at 10 PM**
-   - Gradual dimming across all rooms
-   - Temperature adjustment for sleep
-   - Music: Soft lullabies or silence
-   - Security mode: Enhanced monitoring
-
----
-
-## 🔐 Privacy & Security
-
-| **Feature** | **Implementation** | **Privacy Level** |
-|:---|:---|:---|
-| **Face Recognition** | 100% Local processing | Complete Privacy |
-| **Behavior Learning** | On-device AI models | No cloud data |
-| **Automation Logs** | Local PostgreSQL only | Full Control |
-| **Voice Commands** | Optional local processing | User Choice |
-
-<div align="center">
-
-### 🔐 **Privacy-First AI Architecture**
-
-</div>
-
-<table align="center">
-<tr>
-<td align="center"><strong>🏠 100% Local Processing</strong><br>All AI computation happens on your hardware—no cloud dependencies</td>
-<td align="center"><strong>🛡️ Zero Data Transmission</strong><br>Facial recognition and personal data never leave your home network</td>
-</tr>
-<tr>
-<td align="center"><strong>🔒 Local AI Models</strong><br>YOLOv8, InsightFace, and language models run entirely on your devices</td>
-<td align="center"><strong>📱 Secure Communication</strong><br>All external notifications use encrypted channels without personal data</td>
-</tr>
-<tr>
-<td colspan="2" align="center"><strong>🗄️ Private Database</strong><br>Your family's biometric data stored locally in your own PostgreSQL instance</td>
-</tr>
-</table>
-
-<br>
-
-<div align="center">
 
 ## ✨ Intelligent Features
-
-</div>
 
 ### 🎯 **AI-Powered Person Recognition**
 
@@ -323,21 +160,26 @@ Device Control (Home Assistant) → Continuous Learning (AI Feedback)
 </tr>
 </table>
 
-### 🏠 **Multi-Room Intelligence Network**
+### 🏠 **Personalized Room Automation**
 
-<table align="center">
-<tr>
-<td align="center">📹<br><strong>Strategic Sensor Placement</strong><br>Sensors in every room for complete coverage and personalized automation</td>
-<td align="center">🎯<br><strong>Room-Specific AI</strong><br>Each sensor independently recognizes occupants and adjusts room settings</td>
-</tr>
-<tr>
-<td align="center">🏡<br><strong>Whole-Home Coordination</strong><br>Sensors communicate to create seamless automation flows between rooms</td>
-<td align="center">🎨<br><strong>Personalized Room Profiles</strong><br>Each family member gets custom lighting, temperature, and ambiance per room</td>
-</tr>
-<tr>
-<td colspan="2" align="center">🚶‍♂️<br><strong>Movement Tracking</strong><br>AI follows your journey through the house, preparing each room before you arrive</td>
-</tr>
-</table>
+<div align="center">
+
+#### 📊 Room-Specific Automation Matrix
+
+</div>
+
+| **🏠 Room Type** | **👤 Person Detected** | **💡 Lighting Preference** | **🌡️ Climate Control** | **🎵 Audio/Music** | **⚡ Additional Automation** |
+|:---|:---|:---|:---|:---|:---|
+| **📚 Study Room** | Dad | Cool white, 100% brightness | 20°C, AC on | Focus/Concentration music | Open curtains, activate air purifier |
+| | Kids | Bright white, 90% brightness | 22°C, Fan on | Study music/Lo-fi beats | Desk lamp on, computer wake up |
+| | Mom | Natural white, 70% | 21°C, Fan medium | Calm instrumental | Reading light, phone DND mode |
+| **🍽️ Kitchen** | Mom | Bright white, 100% | 23°C, Exhaust fan | Cooking playlist/Devotional | Under-cabinet lights, recipe display |
+| | Dad | Bright white, 80% | 22°C, Fan on | News/Podcast | Coffee machine auto-start |
+| | Kids | Bright white, 90% | 23°C, Fan on | Fun/Cartoon music | Snack reminder, safety mode |
+| **🛋️ Living Room** | Family (Multiple) | Natural white, 70% | 22°C, AC/Fan auto | Family playlist | TV on, volume moderate |
+| | Dad alone | Warm white, 60% | 21°C, Fan low | News/Sports | TV on sports channel |
+| | Mom alone | Soft white, 50% | 22°C, Fan medium | Devotional/Classical | Meditation corner lighting |
+| | Kids alone | Bright white, 80% | 23°C, Fan high | Cartoon/Kids music | Parental control mode |
 
 ### 💬 **Contextual AI Greetings**
 
@@ -371,19 +213,30 @@ Device Control (Home Assistant) → Continuous Learning (AI Feedback)
 
 > *"Hello, Logu! Happy Diwali! I've prepared your favorite devotional playlist and adjusted the lighting for the celebration."*
 
-### 🏠 **Predictive Home Automation**
+### 🏠 **Multi-Room Intelligence Network**
 
-<div align="center">
+<table align="center">
+<tr>
+<td align="center">📹<br><strong>Strategic Sensor Placement</strong><br>Sensors in every room for complete coverage and personalized automation</td>
+<td align="center">🎯<br><strong>Room-Specific AI</strong><br>Each sensor independently recognizes occupants and adjusts room settings</td>
+</tr>
+<tr>
+<td align="center">🏡<br><strong>Whole-Home Coordination</strong><br>Sensors communicate to create seamless automation flows between rooms</td>
+<td align="center">🎨<br><strong>Personalized Room Profiles</strong><br>Each family member gets custom lighting, temperature, and ambiance per room</td>
+</tr>
+<tr>
+<td colspan="2" align="center">🚶‍♂️<br><strong>Movement Tracking</strong><br>AI follows your journey through the house, preparing each room before you arrive</td>
+</tr>
+</table>
 
-| 💡 **Intelligent Lighting** | ❄️ **Smart Climate Control** |
-|:---:|:---:|
-| AI learns your preferences and automates lighting based on time, weather, occupancy, and mood | Machine learning optimizes temperature settings per room and per person |
+### ⏰ **Time-Based Automation Rules**
 
-| 🎵 **Contextual Music AI** | ⚡ **Energy Optimization** |
-|:---:|:---:|
-| Automatically plays appropriate music based on time, cultural calendar, and family presence | AI algorithms minimize energy consumption while maximizing comfort |
-
-</div>
+| **🕐 Time Period** | **🌅 Morning (6-10 AM)** | **☀️ Day (10 AM-6 PM)** | **🌆 Evening (6-10 PM)** | **🌙 Night (10 PM-6 AM)** |
+|:---|:---|:---|:---|:---|
+| **💡 Lighting Intensity** | Gradual increase (20→80%) | Full brightness as needed | Warm transition (80→40%) | Night mode (10-30%) |
+| **🎵 Music Volume** | Low-Medium (30-50%) | Normal (50-70%) | Medium (40-60%) | Very Low (10-20%) |
+| **🌡️ Temperature** | Cool (20-22°C) | Comfort (22-24°C) | Warm (23-25°C) | Night (21-23°C) |
+| **🚪 Auto-Off Timer** | 3 minutes | 5 minutes | 5 minutes | 2 minutes |
 
 ### 🛡️ **Advanced Security Intelligence**
 
@@ -398,98 +251,9 @@ Device Control (Home Assistant) → Continuous Learning (AI Feedback)
 </tr>
 </table>
 
-<div align="center">
-
-### 🧠 **The AI Brain Behind Your Home**
-
-</div>
-
-At its core, KinAI Vision combines multiple AI technologies to create a seamless, intelligent, and **privacy-protected** experience:
-
-<div align="center">
-
-| 🔍 **Computer Vision AI** | 💬 **Natural Language AI** | 🏠 **Predictive Automation AI** |
-|:---:|:---:|:---:|
-| Advanced YOLOv8 and InsightFace models that don't just detect motion—they **recognize who you are** | LangChain and CrewAI generate contextual, personalized greetings that feel genuinely human | Machine learning algorithms that learn your preferences and anticipate your needs |
-
-| 🎵 **Cultural Scheduling System** | 🛡️ **Security AI** |
-|:---:|:---:|
-| Database-driven scheduling that understands religious calendars and family traditions | Intelligent threat detection that distinguishes between family members, guests, and potential intruders |
-
-</div>
-
----
-
-<div align="center">
-
-## ⚖️ AI vs Traditional Sensors
-
-### 🏆 **Why AI Beats Traditional Sensors**
-
-</div>
-
-| **Capability** | **🤖 KinAI Vision (AI-Powered)** | **🔧 Traditional Sensors (PIR/Microwave/Ultrasonic)** |
-|:---|:---|:---|
-| **🧠 Intelligence Level** | **Recognizes individuals**, learns preferences, adapts behavior | Dumb motion detection - triggers on anything that moves |
-| **👤 Person Identification** | **AI facial recognition** - knows exactly who is home | Cannot distinguish between family, pets, or intruders |
-| **🎨 Personalization** | **Machine learning** creates unique profiles for each person | One-size-fits-all generic responses |
-| **🛡️ Security Intelligence** | **AI threat assessment** - distinguishes family from strangers | False positives from pets, wind, or legitimate visitors |
-| **🏠 Automation Sophistication** | **Predictive AI** - anticipates needs, contextual responses | Basic on/off switching with timers |
-| **🌤️ Environmental Awareness** | **Weather-integrated AI** - adjusts based on conditions | No environmental context or weather integration |
-| **📊 Learning & Adaptation** | **Continuous ML improvement** - gets smarter over time | Static behavior - never learns or improves |
-| **🎵 Cultural Intelligence** | **Religious calendar database** - understands cultural contexts | No cultural or religious awareness |
-| **📱 Communication** | **Natural language AI** - human-like interactions | Basic beeps, lights, or generic notifications |
-| **⚡ Processing Power** | **GPU-accelerated AI** - real-time intelligent decisions | Simple analog circuits with basic logic |
-
-### 🎯 **The AI Advantage**
-
-<div align="center">
-
-**KinAI Vision doesn't just detect—it understands.** While traditional sensors are reactive, our AI is proactive:
-
-</div>
-
-<table>
-<tr>
-<td align="center">🧠<br><strong>Predictive Intelligence</strong><br>Learns your daily routines and prepares your home before you even ask</td>
-<td align="center">👨‍👩‍👧‍👦<br><strong>Family-Aware AI</strong><br>Recognizes when kids come home from school vs. parents returning from work</td>
-</tr>
-<tr>
-<td align="center">🎭<br><strong>Emotional Intelligence</strong><br>Adjusts ambiance based on detected mood and context</td>
-<td align="center">🏠<br><strong>Ecosystem Intelligence</strong><br>Integrates with all smart home devices for coordinated responses</td>
-</tr>
-<tr>
-<td colspan="2" align="center">🔐<br><strong>Privacy-First AI</strong><br>All processing happens locally—your biometric data never leaves your home</td>
-</tr>
-</table>
-
----
-
-<div align="center">
-
-## 🎵 Cultural Automation System
-
-</div>
-
-### 🕉️ **Hindu Devotional Scheduling**
+### 🕉️ **Cultural Automation System**
 
 KinAI Vision includes a **Cultural Scheduling System** that manages Hindu devotional content based on a pre-configured database of festivals and daily deity associations, creating a spiritually enriching home environment.
-
-#### 🤖 **Cultural System Features**
-
-<table>
-<tr>
-<td align="center">📅<br><strong>Festival Database</strong><br>Pre-loaded Hindu festival dates with automatic home ambiance adjustments</td>
-<td align="center">🎵<br><strong>Devotional Music Library</strong><br>Curated religious content organized by deities and occasions</td>
-</tr>
-<tr>
-<td align="center">🕐<br><strong>Daily Schedule Management</strong><br>Traditional deity-day associations with automated playlist rotation</td>
-<td align="center">👨‍👩‍👧‍👦<br><strong>Family Presence Detection</strong><br>Only activates when family members are detected at home</td>
-</tr>
-<tr>
-<td colspan="2" align="center">🌟<br><strong>Contextual Atmosphere</strong><br>Coordinated lighting, music, and environment for religious observances</td>
-</tr>
-</table>
 
 #### 🗓️ **Weekly Deity Schedule**
 
@@ -503,60 +267,48 @@ KinAI Vision includes a **Cultural Scheduling System** that manages Hindu devoti
 | **Saturday** | Shani/Narasimha (சனீஸ்வரர்/நரசிம்மர்) | Devotional song database |
 | **Sunday** | Lord Surya (சூரிய பகவான்) | Sunrise-timed Aditya Hridayam |
 
-#### 🎉 **Pre-Configured Festival Calendar (2025)**
+### 🎉 **Pre-Configured Festival Calendar (2025)**
 
 The Cultural Scheduling System includes these pre-loaded festivals with appropriate responses:
 
 | **📅 Date** | **Festival (Database Entry)** | **🤖 Automated Response** |
 |:---|:---|:---|
-| **Jan 14** | Thai Pongal (தைப்பொங்கல்) | Celebration music playlist, festive lighting |
-| **Feb 26** | Maha Shivaratri (மஹா சிவராத்திரி) | Extended Shiva bhajan playlist, meditation lighting |
-| **Mar 13** | Holi (ஹோலி) | Festive music collection, colorful lighting themes |
-
-### 🔬 **Detailed AI Components**
-
-| **AI Technology** | **Intelligence Role** | **Smart Capabilities** |
-|:---|:---|:---|
-| **YOLOv8 Neural Networks** | Real-time Object Detection | Detects humans with 99.5% accuracy, processes 30+ FPS, GPU-accelerated inference |
-| **InsightFace AI** | Biometric Recognition | Generates 512-dimensional face embeddings, 99.8% face verification accuracy |
-| **LangChain Framework** | Natural Language Intelligence | Contextual prompt engineering, chain-of-thought reasoning, weather integration |
-| **CrewAI Agents** | Conversational AI | Multi-agent collaboration, personality-aware responses, cultural context |
-| **Ollama LLM** | Local Language Models | Privacy-first text generation, no cloud dependencies, customizable responses |
-| **Computer Vision Pipeline** | Image Processing AI | Real-time frame analysis, face extraction, embedding comparison, pattern recognition |
-| **Predictive Analytics** | Behavioral Learning | User preference learning, energy optimization, predictive automation |
-| **Cultural Scheduling** | Religious Content Management | Hindu calendar integration, festival database, devotional content organization |
-
-## 🕰️ Smart Scheduling System
-
-</div>
-
-A **context-aware devotional scheduler** that adapts to family presence, traditions, and natural rhythms.
-
-### ✨ Key Features
-
-<table>
-<tr>
-<td align="center">👨‍👩‍👧‍👦<br><strong>Family Presence Detection</strong><br>Activates sessions only when residents are home.</td>
-<td align="center">🌅<br><strong>Solar-Based Timing</strong><br>Sunday Surya prayers follow <strong>actual sunrise time</strong> (location & date aware).</td>
-</tr>
-<tr>
-<td align="center">🕐<br><strong>Traditional Timing</strong><br>Daily sessions at <strong>6:00 AM</strong> and <strong>7:00 PM</strong>.</td>
-<td align="center">🗓️<br><strong>Context-Aware Activation</strong><br>Adjusts for cultural events & family preferences.</td>
-</tr>
-<tr>
-<td colspan="2" align="center">🎧<br><strong>Presence-Based Audio Control</strong><br>Auto-pauses when home is empty, resumes on return.</td>
-</tr>
-</table>
+| Jan 14 | Thai Pongal (தைப்பொங்கல்) | Celebration music playlist, festive lighting |
+| Feb 26 | Maha Shivaratri (மஹா சிவராத்திரி) | Extended Shiva bhajan playlist, meditation lighting |
+| Mar 13 | Holi (ஹோலி) | Festive music collection, colorful lighting themes |
 
 ---
 
-<div align="center">
+## 🏗️ Technical Architecture
 
-## 🏗️ Intelligent Architecture
+<details>
+  <summary>🔍 <strong>High-Level System Architecture</strong></summary>
 
-</div>
+```mermaid
+graph TD
+    A[📹 Smart Cameras] -->|Video Stream| B[🧠 Kinwatch AI Agent]
+    B -->|Frame Analysis| B1[🎯 YOLOv8 Person Detection]
+    B1 -->|Face Extraction| B2[👤 InsightFace Recognition]
+    B2 -->|Identity Match| B3[🗄️ PostgreSQL Database]
+    B3 -->|Profile Data| C[⚡ FastAPI Intelligence Hub]
+    C -->|AI Tasks| D[🤖 Celery AI Workers]
+    D -->|NLP Generation| E[💬 LangChain CrewAI]
+    E -->|Weather Data| F[🌤️ OpenWeatherMap API]
+    D -->|Cultural Tasks| G[🕉️ Festival Database Engine]
+    D -->|Automation| H[🌐 n8n AI Workflows]
+    H -->|Device Control| I[🏠 Home Assistant]
+    H -->|Music Control| J[🎵 Jellyfin]
+    H -->|Notifications| K[📱 Telegram]
+    
+    style B fill:#2563eb,color:#fff
+    style C fill:#dc2626,color:#fff
+    style D fill:#7c3aed,color:#fff
+    style E fill:#059669,color:#fff
 
-### 🧠 **AI-Driven Microservices**
+```
+</details>
+<details>
+  <summary><strong>🧠 Low-Level AI-Driven Microservices Architecture</strong></summary>
 
 KinAI Vision employs a sophisticated AI-first architecture where intelligence is distributed across specialized components:
 
@@ -607,131 +359,32 @@ graph TD
     N -->|Learning Data| B17
     O[⚡ Redis AI Cache] -->|Real-time State| E
     
-    %% Modern styling for both light and dark modes
-    classDef primaryAgent fill:#2563eb,stroke:#1d4ed8,stroke-width:3px,color:#ffffff
-    classDef detection fill:#059669,stroke:#047857,stroke-width:2px,color:#ffffff
-    classDef processing fill:#7c3aed,stroke:#6d28d9,stroke-width:2px,color:#ffffff
-    classDef intelligence fill:#dc2626,stroke:#b91c1c,stroke-width:2px,color:#ffffff
-    classDef automation fill:#ea580c,stroke:#c2410c,stroke-width:2px,color:#ffffff
-    classDef storage fill:#4338ca,stroke:#3730a3,stroke-width:2px,color:#ffffff
-    classDef integration fill:#0891b2,stroke:#0e7490,stroke-width:2px,color:#ffffff
-    
-    class B primaryAgent
-    class B2,B7,B8 detection
-    class B1,B5,B6,B9,B12,B13,B15,B17 processing
-    class D,E,F intelligence
-    class H,I,M automation
-    class C,N,O storage
-    class G,J,K,L integration
-    class B3,B4,B10,B11,B14,B16,B18 processing
+    style B fill:#2563eb,color:#fff
+    style C fill:#dc2626,color:#fff
+    style D fill:#7c3aed,color:#fff
+    style E fill:#059669,color:#fff
 ```
 
-### 🤖 **AI Component Intelligence**
+</details>
 
-<div align="center">
+### 🔧 **AI Component Design**
 
-#### 🎯 **Kinwatch AI Agent** - The Vision Brain
-</div>
+#### 🎯 **Core AI Technologies**
 
-<table>
-<tr>
-<td align="center"><strong>Neural Network Pipeline</strong><br>Real-time video processing with GPU acceleration</td>
-<td align="center"><strong>Intelligent Frame Analysis</strong><br>Smart frame selection to optimize processing power</td>
-</tr>
-<tr>
-<td align="center"><strong>Biometric Intelligence</strong><br>Creates unique face signatures for family members</td>
-<td align="center"><strong>Learning Database</strong><br>Continuously improves recognition accuracy</td>
-</tr>
-</table>
+| **AI Technology** | **Intelligence Role** | **Smart Capabilities** |
+|:---|:---|:---|
+| **YOLOv8 Neural Networks** | Real-time Object Detection | Detects humans with 99.5% accuracy, processes 30+ FPS, GPU-accelerated inference |
+| **InsightFace AI** | Biometric Recognition | Generates 512-dimensional face embeddings, 99.8% face verification accuracy |
+| **LangChain Framework** | Natural Language Intelligence | Contextual prompt engineering, chain-of-thought reasoning, weather integration |
+| **CrewAI Agents** | Conversational AI | Multi-agent collaboration, personality-aware responses, cultural context |
+| **Ollama LLM** | Local Language Models | Privacy-first text generation, no cloud dependencies, customizable responses |
+| **Computer Vision Pipeline** | Image Processing AI | Real-time frame analysis, face extraction, embedding comparison, pattern recognition |
+| **Predictive Analytics** | Behavioral Learning | User preference learning, energy optimization, predictive automation |
+| **Cultural Scheduling** | Religious Content Management | Hindu calendar integration, festival database, devotional content organization |
 
-<div align="center">
+#### 🤖 **AI Services Architecture**
 
-#### 🧠 **AI Decision Engine** - The Smart Controller
-</div>
-
-<table>
-<tr>
-<td align="center"><strong>Event Classification</strong><br>Intelligently categorizes detection events</td>
-<td align="center"><strong>Context Analysis</strong><br>Considers time, weather, family patterns</td>
-</tr>
-<tr>
-<td align="center"><strong>Prediction Algorithms</strong><br>Anticipates user needs and preferences</td>
-<td align="center"><strong>Smart Routing</strong><br>Directs events to appropriate AI workers</td>
-</tr>
-</table>
-
-<div align="center">
-
-#### 💬 **Natural Language AI** - The Communication Brain
-</div>
-
-<table>
-<tr>
-<td align="center"><strong>Contextual Understanding</strong><br>Analyzes current conditions for relevant responses</td>
-<td align="center"><strong>Personality Engine</strong><br>Maintains consistent, warm communication style</td>
-</tr>
-<tr>
-<td align="center"><strong>Cultural Awareness</strong><br>Respects religious and cultural contexts</td>
-<td align="center"><strong>Weather Integration</strong><br>Seamlessly incorporates environmental data</td>
-</tr>
-</table>
-
----
-
-<div align="center">
-
-## 📊 AI Data Flow
-
-</div>
-
-### 🔄 **Intelligent Processing Pipeline**
-
-```mermaid
-graph LR
-    A[📹 Video Input] -->|AI Analysis| B[🧠 Neural Processing]
-    B -->|Recognition| C[👤 Identity AI]
-    C -->|Context| D[🌤️ Environmental AI]
-    D -->|Generation| E[💬 Language AI]
-    E -->|Action| F[🏠 Automation AI]
-    
-    G[📊 Learning Database] <-->|Continuous Learning| B
-    H[🎵 Cultural Database] <-->|Festival Scheduling| E
-    I[🛡️ Security AI] <-->|Threat Analysis| C
-    
-    style B fill:#ff6b6b,color:#fff
-    style C fill:#4ecdc4,color:#fff
-    style D fill:#45b7d1,color:#fff
-    style E fill:#96ceb4,color:#fff
-    style F fill:#ffeaa7,color:#000
-```
-
-#### 🚀 **Real-Time AI Processing**
-
-<div align="center">
-
-| Step | Process | Technology |
-|:---:|:---|:---|
-| **1** | **🎥 Smart Video Capture**: AI-optimized frame selection and preprocessing | YOLOv8 + OpenCV |
-| **2** | **🧠 Neural Analysis**: YOLOv8 + InsightFace parallel processing | CUDA GPU Acceleration |
-| **3** | **🎯 Intelligent Recognition**: Biometric matching with learning algorithms | PostgreSQL + ML |
-| **4** | **🌤️ Context Integration**: Weather, time, and cultural calendar analysis | LangChain Framework |
-| **5** | **💬 AI Response Generation**: Natural language processing with personality | CrewAI Agents |
-| **6** | **🏠 Smart Automation**: Predictive home control based on learned preferences | FastAPI + Celery |
-| **7** | **📊 Continuous Learning**: Feedback loops improve recognition and responses | Redis + Database |
-
-</div>
-
----
-
-<div align="center">
-
-## 🔧 AI Component Design
-
-</div>
-
-### 🤖 **Core AI Services**
-
-#### 🎯 **Kinwatch AI Agent** (`kinwatch_agent.py`)
+**Kinwatch AI Agent** (`kinwatch_agent.py`)
 ```python
 # AI-powered video analysis engine
 - Neural Network Models: YOLOv8 + InsightFace
@@ -741,7 +394,7 @@ graph LR
 - Real-time Performance: 30+ FPS processing capability
 ```
 
-#### 🧠 **Intelligence Hub** (`surveillance_agent.py`)
+**Intelligence Hub** (`surveillance_agent.py`)
 ```python
 # AI decision-making and event routing
 - Event Classification: Smart categorization algorithms
@@ -750,22 +403,13 @@ graph LR
 - Learning Integration: Pattern recognition feedback
 ```
 
-#### 💬 **Natural Language AI** (`chains.py`, `agents.py`)
+**Natural Language AI** (`chains.py`, `agents.py`)
 ```python
 # Human-like communication generation
 - LangChain Framework: Advanced prompt engineering
 - CrewAI Agents: Multi-agent conversation intelligence
 - Context Integration: Weather + cultural awareness
 - Personality Engine: Consistent, warm communication
-```
-
-#### 🕉️ **Cultural Scheduling Engine** (`tasks.py`)
-```python
-# Religious and cultural content management
-- Festival Database: Hindu calendar integration
-- Music Management: Contextual devotional content
-- Family Presence: Smart activation triggers
-- Cultural Preferences: Adaptive religious settings
 ```
 
 ### 🗄️ **AI Memory System** (PostgreSQL)
@@ -779,13 +423,23 @@ music_schedule    -- Cultural scheduling data
 system_state      -- AI learning state management
 ```
 
----
+### 🔐 **Privacy-First AI Architecture**
 
-<div align="center">
+<table align="center">
+<tr>
+<td align="center"><strong>🏠 100% Local Processing</strong><br>All AI computation happens on your hardware—no cloud dependencies</td>
+<td align="center"><strong>🛡️ Zero Data Transmission</strong><br>Facial recognition and personal data never leave your home network</td>
+</tr>
+<tr>
+<td align="center"><strong>🔒 Local AI Models</strong><br>YOLOv8, InsightFace, and language models run entirely on your devices</td>
+<td align="center"><strong>📱 Secure Communication</strong><br>All external notifications use encrypted channels without personal data</td>
+</tr>
+<tr>
+<td colspan="2" align="center"><strong>🗄️ Private Database</strong><br>Your family's biometric data stored locally in your own PostgreSQL instance</td>
+</tr>
+</table>
 
-## 📁 Project Structure
-
-</div>
+### 📁 **Project Structure**
 
 ```
 KinAI-Vision/
@@ -810,24 +464,20 @@ KinAI-Vision/
 │   └── 👤 buffalo_l/                    # InsightFace model directory
 │
 ├── 📁 footage/                          # Training videos directory
-│
 ├── 📁 detected_faces/                   # Saved detection images
-│
 ├── 📁 logs/                             # Log files directory
-│
 ├── 📁 docker/                           # Docker configuration
-│   └── 📦 requirements.txt              # Smart monitoring dependencies
-│
-├── 📦 requirements.txt                  # Home automation dependencies
+├── 📦 requirements.txt                  # Dependencies
 ├── 🐳 Dockerfile                        # Docker image configuration
 ├── 🐳 docker-compose.yml               # Docker Compose configuration
 ├── 🗄️ init_db.sql                      # PostgreSQL initialization
 ├── 🔐 .env                             # Environment variables
 └── 📚 README.md                        # Project documentation
 ```
+
 ---
 
-## 🚀 Quick Start
+## 🚀 Getting Started
 
 ### 📋 **Prerequisites**
 
@@ -837,7 +487,7 @@ KinAI-Vision/
 - **🔧 Home Assistant** (optional): Smart home integration
 - **🎵 Jellyfin** (optional): AI music automation
 
-### ⚡ **Rapid AI Deployment**
+### ⚡ **Quick Setup**
 
 ```bash
 # Clone the AI-powered smart home system
@@ -860,14 +510,11 @@ docker-compose ps
 ```bash
 # Train family face recognition (first-time setup)
 docker-compose exec kinai-vision python src/train_faces.py
-
 ```
 
----
+### ⚙️ **Configuration**
 
-## ⚙️ Configuration
-
-### 🤖 **AI Model Configuration** (`.env`)
+#### 🤖 **AI Model Configuration** (`.env`)
 
 ```bash
 # AI Model Settings
@@ -886,7 +533,7 @@ LEARNING_RATE_ADJUSTMENT=true
 CONTINUOUS_LEARNING=enabled
 ```
 
-### 🧠 **Intelligence Configuration** (`configs/config.ini`)
+#### 🧠 **Intelligence Configuration** (`configs/config.ini`)
 
 ```ini
 [AI_PROCESSING]
@@ -910,6 +557,95 @@ family_presence_detection = true
 
 ---
 
+## 📊 Performance and Scalability
+
+### ⚡ **AI Performance Metrics**
+```yaml
+Face Recognition: <200ms average response time
+Video Analysis: 30+ FPS real-time processing
+NLP Generation: <500ms for contextual greetings
+Automation Response: <100ms for smart device control
+Database Queries: <50ms for preference lookups
+```
+
+### 📈 **Horizontal Scaling**
+```yaml
+GPU Workers: Scale based on video analysis load
+CPU Workers: Auto-scale for automation tasks
+Database: Read replicas for improved AI query performance
+Cache Layer: Redis for frequently accessed AI decisions
+```
+
+---
+
+## 🛠️ Development and Deployment
+
+### 🐳 **Containerized AI Services**
+```yaml
+# docker-compose.yml excerpt
+services:
+  kinwatch-ai:
+    build: ./ai-services/computer-vision
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+  
+  langchain-ai:
+    build: ./ai-services/nlp
+    environment:
+      - OLLAMA_HOST=ollama:11434
+      - AI_MODEL=llama3.2:latest
+  
+  celery-workers:
+    build: ./ai-services/workers
+    deploy:
+      replicas: 3
+      restart_policy:
+        condition: on-failure
+```
+
+### 🔧 **AI Service Configuration**
+```python
+# AI Service Configuration Management
+class AIServiceConfig:
+    def __init__(self):
+        self.face_recognition_threshold = 0.6
+        self.gpu_acceleration = True
+        self.learning_rate = 0.001
+        self.cultural_scheduling = True
+        self.privacy_mode = "strict"
+    
+    def optimize_for_hardware(self):
+        """Auto-configure based on available hardware"""
+        if self.has_gpu():
+            self.enable_gpu_acceleration()
+        else:
+            self.optimize_cpu_processing()
+```
+
+---
+
+## 🚀 Future AI Enhancements
+
+### 🧪 **Planned Intelligence Upgrades**
+- **Multi-Modal AI**: Integration of audio analysis with computer vision
+- **Predictive Maintenance**: AI-driven smart device health monitoring
+- **Advanced Personalization**: Emotion recognition for mood-based automation
+- **Energy AI**: Machine learning for optimal energy consumption
+- **Voice Intelligence**: Local speech recognition and natural language commands
+
+### 🔮 **Emerging AI Technologies**
+- **Edge AI Chips**: Dedicated neural processing units for faster inference
+- **Federated Learning**: Privacy-preserving model improvements across KinAI installations
+- **Quantum-Ready Architecture**: Preparing for quantum-enhanced AI capabilities
+- **Neuromorphic Computing**: Brain-inspired processing for ultra-low power AI
+
+---
+
 ## 🤝 Contributing
 
 We welcome contributions to enhance KinAI Vision's AI capabilities! Here are key areas where you can contribute:
@@ -922,27 +658,9 @@ We welcome contributions to enhance KinAI Vision's AI capabilities! Here are key
 - **🏠 Smart Automation**: Develop new AI-driven automation patterns
 - **🛡️ Security AI**: Improve threat detection, add behavioral analysis
 
-### 📝 **Contribution Guidelines**
-
-```bash
-# Fork and clone
-git clone https://github.com/logulokesh/kinai-vision.git
-
-# Create AI feature branch
-git checkout -b feature/ai-enhancement-name
-
-# Develop with AI best practices
-# - Include unit tests for AI components
-# - Document AI model changes
-# - Test on different hardware configurations
-
-# Submit intelligent pull request
-git push origin feature/ai-enhancement-name
-```
-
 ## 📄 License
 
-This project is licensed under the MIT License 
+This project is licensed under the MIT License.
 
 ---
 
