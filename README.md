@@ -44,32 +44,40 @@
   </tr>
 </table>
 
+<table width="100%" border="0">
+  <tr>
+    <td width="15%" valign="top">
+      <img src="https://github.com/Logulokesh/KinAI-Ecosystem/blob/main/img/Loading.gif" alt="KinAI GIF" width="100%" />
+    </td>
+    <td width="70%" valign="top">
+    
 <details>
   <summary><strong><span style="color:#FFD700;">🧠 <em>Thinking Like a Real Human Agent</em></span></strong></summary>
-
-  <em>"I spend my day solving problems at scale—deploying AI, managing enterprise systems, optimizing for millions. But the moment I walk into my own home… it's like none of that matters."</em>
-  <em>"I'm surrounded by 'smart' devices, but they don't talk to each other. They don't know me. They don't even try."</em>
-  <em>"I'm tired. I skipped lunch. It's festival week. But my home doesn't notice. No lights adjust. No music plays. No gentle reminder. Just silence."</em>
-  <em>"Why does everything feel switched off—emotionally?"</em>
-  <em>Now imagine a home that doesn't just automate—it understands."</em>
-  <em>"Hmm… user looks drained. Let's dim the lights 💡, play soft instrumental 🎵, and remind them about the puja prep 🪔."</em>
-  <em>"Child just walked in. Backpack on. Mood: low. Let's greet gently and queue up their favorite cartoon 🎒📺."</em>
+  <em>"I spend my day solving problems at scale—deploying AI, managing enterprise systems, optimizing for millions. But the moment I walk into my own home… it's like none of that matters."</em><br>
+  <em>"I'm surrounded by 'smart' devices, but they don't talk to each other. They don't know me. They don't even try."</em><br>
+  <em>"I'm tired. I skipped lunch. It's festival week. But my home doesn't notice. No lights adjust. No music plays. No gentle reminder. Just silence."</em><br>
+  <em>"Why does everything feel switched off—emotionally?"</em><br>
+  <em>Now imagine a home that doesn't just automate—it understands."</em><br>
+  <em>"Hmm… user looks drained. Let's dim the lights 💡, play soft instrumental 🎵, and remind them about the puja prep 🪔."</em><br>
+  <em>"Child just walked in. Backpack on. Mood: low. Let's greet gently and queue up their favorite cartoon 🎒📺."</em><br>
   <em>"Unrecognized face at 2:13 AM. No match. Alerting now. 🕵️"</em>
-
-  <br><br><em><strong>🔍 Vision Model Analysis</strong></em>
-  <em>👁️ "Familiar face detected. Expression: fatigued."</em>
-  <em>🧠 "Routine suggests relaxation time. Adjusting environment."</em>
+  
+  <br><strong>🔍 Vision Model Analysis</strong><br>
+  <em>👁️ "Familiar face detected. Expression: fatigued."</em><br>
+  <em>🧠 "Routine suggests relaxation time. Adjusting environment."</em><br>
   <em>🕵️ "Unknown individual. Unusual hour. Triggering alert."</em>
-
-  <br><br><em><strong>🧩 Key Considerations</strong></em>
-  <em>Context Awareness: Understand who, when, and why—not just what.</em>
-  <em>Emotional Intelligence: Detect mood, routine, and subtle cues.</em>
-  <em>Cultural Sensitivity: Respect traditions and personalize accordingly 🪔.</em>
+  
+  <br><strong>🧩 Key Considerations</strong><br>
+  <em>Context Awareness: Understand who, when, and why—not just what.</em><br>
+  <em>Emotional Intelligence: Detect mood, routine, and subtle cues.</em><br>  
+  <em>Cultural Sensitivity: Respect traditions and personalize accordingly 🪔.</em><br>
   <em>Privacy-First: All intelligence stays local—no data leaks 🔐.</em>
-
-  <br><br><em><strong>✅ Conclusion</strong></em>
-  <em>This isn't just a smart home. It's a home that senses, thinks, and responds with care. A home that feels like it's truly yours. 🏡</em>
+  
+  <br><em>This isn't just a smart home. It's a home that senses, thinks, and responds with care. A home that feels like it's truly yours. 🏡</em>
 </details>
+    </td>
+  </tr>
+</table>
 
 <!-- Row 2: Engineer the Approach -->
 <table style="width: 100%; border-collapse: collapse; font-family: sans-serif; background-color: #f9f9f9;">
