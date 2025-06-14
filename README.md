@@ -245,7 +245,7 @@
 <br><strong>Strategic Sensor Placement</strong><br>Sensors in every room for complete coverage and personalized automation
 </td>
 <td align="center">
-<img src="https://github.com/Logulokesh/KinAI-Vision/blob/main/src/Room-SpecificAI.png" alt="Room-Specific AI" width="120" height="150"><br>
+<img src="https://github.com/Logulokesh/KinAI-Vision/blob/main/src/Room-SpecificAI.png" alt="Room-Specific AI" width="150" height="150"><br>
 <br><strong>Room-Specific AI</strong><br>Each sensor independently recognizes occupants and adjusts room settings
 </td>
 </tr>
