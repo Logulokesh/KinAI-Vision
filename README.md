@@ -168,13 +168,13 @@
 </tr>
 </table>
 
-### 🏠 **Personalized Room Automation**
+## 🏠 **Personalized Room Automation**
 
-<div align="center">
+
 
 #### 📊 Room-Specific Automation Matrix
 
-</div>
+
 
 | **🏠 Room Type** | **👤 Person Detected** | **💡 Lighting Preference** | **🌡️ Climate Control** | **🎵 Audio/Music** | **⚡ Additional Automation** |
 |:---|:---|:---|:---|:---|:---|
@@ -240,15 +240,30 @@
 - **🔐 Privacy-First**: All AI processing happens locally on your home network
 <table align="center">
 <tr>
-<td align="center">📹<br><strong>Strategic Sensor Placement</strong><br>Sensors in every room for complete coverage and personalized automation</td>
-<td align="center">🎯<br><strong>Room-Specific AI</strong><br>Each sensor independently recognizes occupants and adjusts room settings</td>
+<td align="center">
+<img src="https://github.com/Logulokesh/KinAI-Vision/blob/main/src/StrategicSensorPlacement.png" alt="Strategic Sensor Placement" width="120" height="150"><br>
+<br><strong>Strategic Sensor Placement</strong><br>Sensors in every room for complete coverage and personalized automation
+</td>
+<td align="center">
+<img src="https://github.com/Logulokesh/KinAI-Vision/blob/main/src/Room-SpecificAI.png" alt="Room-Specific AI" width="120" height="150"><br>
+<br><strong>Room-Specific AI</strong><br>Each sensor independently recognizes occupants and adjusts room settings
+</td>
 </tr>
 <tr>
-<td align="center">🏡<br><strong>Whole-Home Coordination</strong><br>Sensors communicate to create seamless automation flows between rooms</td>
-<td align="center">🎨<br><strong>Personalized Room Profiles</strong><br>Each family member gets custom lighting, temperature, and ambiance per room</td>
+<td align="center">
+<img src="https://github.com/Logulokesh/KinAI-Vision/blob/main/src/WholeHomeCoordination.png" alt="Whole-Home Coordination" width="120" height="150"><br>
+<br><strong>Whole-Home Coordination</strong><br>Sensors communicate to create seamless automation flows between rooms
+</td>
+<td align="center">
+<img src="https://github.com/Logulokesh/KinAI-Vision/blob/main/src/PersonalizedRoomProfiles.png" alt="Personalized Room Profiles" width="120" height="150"><br>
+<br><strong>Personalized Room Profiles</strong><br>Each family member gets custom lighting, temperature, and ambiance per room
+</td>
 </tr>
 <tr>
-<td colspan="2" align="center">🚶‍♂️<br><strong>Movement Tracking</strong><br>AI follows your journey through the house, preparing each room before you arrive</td>
+<td colspan="2" align="center">
+<img src="https://github.com/Logulokesh/KinAI-Vision/blob/main/src/MovementTracking.png" alt="Movement Tracking" width="120" height="150"><br>
+<br><strong>Movement Tracking</strong><br>AI follows your journey through the house, preparing each room before you arrive
+</td>
 </tr>
 </table>
 
