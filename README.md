@@ -633,57 +633,6 @@ Cache Layer: Redis for frequently accessed AI decisions
 
 ---
 
-## 🛠️ Development and Deployment
-
-### 🐳 **Containerized AI Services**
-```yaml
-# docker-compose.yml excerpt
-services:
-  kinwatch-ai:
-    build: ./ai-services/computer-vision
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              count: 1
-              capabilities: [gpu]
-  
-  langchain-ai:
-    build: ./ai-services/nlp
-    environment:
-      - OLLAMA_HOST=ollama:11434
-      - AI_MODEL=llama3.2:latest
-  
-  celery-workers:
-    build: ./ai-services/workers
-    deploy:
-      replicas: 3
-      restart_policy:
-        condition: on-failure
-```
-
-### 🔧 **AI Service Configuration**
-```python
-# AI Service Configuration Management
-class AIServiceConfig:
-    def __init__(self):
-        self.face_recognition_threshold = 0.6
-        self.gpu_acceleration = True
-        self.learning_rate = 0.001
-        self.cultural_scheduling = True
-        self.privacy_mode = "strict"
-    
-    def optimize_for_hardware(self):
-        """Auto-configure based on available hardware"""
-        if self.has_gpu():
-            self.enable_gpu_acceleration()
-        else:
-            self.optimize_cpu_processing()
-```
-
----
-
 ## 🚀 Future AI Enhancements
 
 ### 🧪 **Planned Intelligence Upgrades**
