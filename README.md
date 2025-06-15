@@ -25,13 +25,18 @@
 *Transform your home with cutting-edge AI that sees, thinks, and acts*
 </div>
 
+
 <!-- Row 1: Identify the Challenge -->
 <table style="width: 100%; border-collapse: collapse; font-family: sans-serif;">
   <tr>
-    <td style="width: 200px; text-align: center; vertical-align: top; padding: 40px;">
-      <img src="https://raw.githubusercontent.com/Logulokesh/VICTutorAI-Offline-Educational-Activity-Generator/main/identify.png" style="width: 60%; height: auto;" alt="Identify" />
+    <td style="text-align: center; vertical-align: top; padding: 20px; width: 1%;">
+      <img 
+        src="https://raw.githubusercontent.com/Logulokesh/VICTutorAI-Offline-Educational-Activity-Generator/main/identify.png" 
+        style="max-width: 100%; height: auto; max-height: 250px;" 
+        alt="Empower" 
+      />
     </td>
-    <td style="padding: 40px; vertical-align: top;">
+    <td style="padding: 20px; vertical-align: top;">
       <h2 style="color: #dc2626; display: flex; align-items: center; gap: 10px; margin-top: 0;">
         <span style="font-size: 24px;">🔍</span> 1. Identify the Challenge
       </h2>
@@ -43,6 +48,7 @@
     </td>
   </tr>
 </table>
+
 
 <table width="100%" border="0">
   <tr>
@@ -80,6 +86,7 @@
 </table>
 
 <!-- Row 2: Engineer the Approach -->
+<!-- Row 2: Engineer the Approach -->
 <table style="width: 100%; border-collapse: collapse; font-family: sans-serif; background-color: #f9f9f9;">
   <tr>
     <td style="padding: 40px; vertical-align: top;">
@@ -93,17 +100,27 @@
         Natural language tools 🗣️ like <strong>LangChain</strong> and <strong>CrewAI</strong> allow for contextual, human-like interaction. Predictive automation 🔮 learns user preferences, while a cultural scheduling engine 🪔 integrates Hindu festivals and traditions for a respectful, personalized experience.
       </p>
     </td>
-    <td style="width: 200px; text-align: center; vertical-align: top; padding: 40px;">
-      <img src="https://raw.githubusercontent.com/Logulokesh/VICTutorAI-Offline-Educational-Activity-Generator/main/support.png" style="width: 60%; height: auto;" alt="Support" />
+    <td style="text-align: center; vertical-align: top; padding: 40px; width: 1%;">
+      <img 
+        src="https://raw.githubusercontent.com/Logulokesh/VICTutorAI-Offline-Educational-Activity-Generator/main/support.png" 
+        alt="Support" 
+        style="max-width: 100%; height: auto; max-height: 250px;" 
+      />
     </td>
   </tr>
 </table>
 
+
+<!-- Row 3: Implement the Outcome -->
 <!-- Row 3: Implement the Outcome -->
 <table style="width: 100%; border-collapse: collapse; font-family: sans-serif;">
   <tr>
-    <td style="width: 200px; text-align: center; vertical-align: top; padding: 40px;">
-      <img src="https://raw.githubusercontent.com/Logulokesh/VICTutorAI-Offline-Educational-Activity-Generator/main/empower.png" style="width: 60%; height: auto;" alt="Empower" />
+    <td style="text-align: center; vertical-align: top; padding: 40px; width: 1%;">
+      <img 
+        src="https://raw.githubusercontent.com/Logulokesh/VICTutorAI-Offline-Educational-Activity-Generator/main/empower.png" 
+        alt="Empower" 
+        style="max-width: 100%; height: auto; max-height: 250px;" 
+      />
     </td>
     <td style="padding: 40px; vertical-align: top;">
       <h2 style="color: #dc2626; display: flex; align-items: center; gap: 10px; margin-top: 0;">
