@@ -648,32 +648,26 @@ Cache Layer: Redis for frequently accessed AI decisions
 - **Quantum-Ready Architecture**: Preparing for quantum-enhanced AI capabilities
 - **Neuromorphic Computing**: Brain-inspired processing for ultra-low power AI
 
----
 
-## 🤝 Contributing
-
-We welcome contributions to enhance KinAI Vision's AI capabilities! Here are key areas where you can contribute:
-
-### 🧠 **AI Enhancement Areas**
-
-- **🎯 Computer Vision**: Improve detection accuracy, add new object recognition
-- **💬 Natural Language**: Enhance greeting generation, add multilingual support
-- **🕉️ Cultural Scheduling**: Expand religious calendar support, add more traditions
-- **🏠 Smart Automation**: Develop new AI-driven automation patterns
-- **🛡️ Security AI**: Improve threat detection, add behavioral analysis
-
-## 📄 License
-
-This project is licensed under the MIT License.
 
 ---
 
 <div align="center">
 
-### 🌟 **Transform Your Home with AI Intelligence**
+[![Contributors](https://contrib.rocks/image?repo=Logulokesh/KinAI-Ecosystem)](https://github.com/Logulokesh/KinAI-Ecosystem/graphs/contributors)
 
-**KinAI Vision** - Where Artificial Intelligence Meets Home Automation
+</div>
 
-*Built with ❤️ and 🧠 by the AI enthusiast community*
+---
+
+## 📄 License
+
+Yes, it’s completely free — just like a gesture of support 🤝, a nod of appreciation 👍, or a reassuring smile 😊.
+
+---
+
+<div align="center">
+
+**Built with passion ❤️ for privacy, intelligence, and automation**
 
 </div>
