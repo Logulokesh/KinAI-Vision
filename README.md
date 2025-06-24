@@ -58,7 +58,7 @@
     <td width="70%" valign="top">
     
 <details>
-  <summary><strong><span style="color:#FFD700;">🧠 <em>Thinking Like a Real Human Agent</em></span></strong></summary>
+  <summary><strong><span style="color:#FFD700;">🧠 <em>Think Like a Human — Show Thinking</em></span></strong></summary>
   <em>"I spend my day solving problems at scale—deploying AI, managing enterprise systems, optimizing for millions. But the moment I walk into my own home… it's like none of that matters."</em><br>
   <em>"I'm surrounded by 'smart' devices, but they don't talk to each other. They don't know me. They don't even try."</em><br>
   <em>"I'm tired. I skipped lunch. It's festival week. But my home doesn't notice. No lights adjust. No music plays. No gentle reminder. Just silence."</em><br>
